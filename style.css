@@ -1,0 +1,219 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Libre Baskerville', serif;
+}
+nav{
+    padding: 1rem;
+    background-color: white;
+    opacity: 0.5;
+    position: fixed;
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    margin-left: 1200px;
+}
+nav ul a{
+    color: black;
+    text-decoration: none;
+    padding: 0.7rem;
+    display: block;
+    font-weight: bold;
+}
+nav ul a:hover{
+    background-color: wheat;
+    font-weight: bold;
+}
+.encabezado{
+    background-image: url(./1.JPG);
+    background-size: cover;
+    height: 600px;
+}
+.contenedor{
+    background-color: black;
+    width: 100%;
+    margin:20px auto;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(2 40px, 1fr 100px);
+    gap:20px;
+    grid-template-areas: 
+      "alumnos alumnos alumnos"
+      "sara joha day"
+}
+.bienvenidos{
+    font-size: 50px;
+    text-align: center;
+    font-family: 'Germania One', cursive;
+}
+.lema{
+    text-align: center;
+    font-family: 'Libre Baskerville', serif;
+    line-height: 2.5;
+}
+.alumnos{
+    font-size: 40px;
+    text-align: center;
+    font-family: 'Germania One', cursive;
+    color: white;
+    grid-area: alumnos;
+
+}
+.sara{
+    margin: auto
+}
+.joha{
+    margin: auto;
+}
+.day{
+    margin: auto;
+}
+.footer{
+    font-size: 15px;
+    text-align: center;
+    font-family: 'Libre Baskerville', serif;
+    color: black;
+}
+.sec1{
+    padding: 10px;
+    margin: 20px;
+    text-align: center;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 20px;
+}
+.videos{
+    width: 100%;
+    margin:20px auto;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(1fr);
+    gap:20px;
+    grid-template-areas: 
+    "espanol portugues ingles"
+}
+.portugues{
+    margin: auto;
+}
+.espanol{
+    margin: auto;
+}
+.ingles{
+    margin: auto;
+}
+.profes{
+    font-size: 50px;
+    text-align: center;
+    font-family: 'Germania One', cursive;
+}
+.maestras{
+    width: 100%;
+    margin:20px auto;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(3, 1fr 40px, 1fr);
+    gap:20px;
+    grid-template-areas: 
+    "vane1 adri1 vale1"
+    "vane2 adri2 vale2"
+    "vane3 adri3 vale3"
+}
+.vane1{
+    margin: auto;
+}
+.adri1{
+    margin: auto;
+}
+.vale1{
+    margin: auto;
+}
+.vane2{
+    text-align: center;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 20px;
+}
+.adri2{
+    text-align: center;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 20px;
+}
+.vale2{
+    text-align: center;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 20px;
+}
+.vane3{
+    text-align: center;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 15px;
+}
+.adri3{
+    text-align: center;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 15px;
+}
+.vale3{
+    text-align: center;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 15px;
+}
+.contacto{
+    font-size: 50px;
+    text-align: center;
+    font-family: 'Germania One', cursive;
+}
+.email{
+    text-align: center;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 20px;
+}
+.form{
+    text-align: center;
+}
+@media screen and (max-width: 768px){
+    .contenedor{
+        grid-template-columns: 1fr;
+        grid-template-rows: 0fr 1fr 1fr 1fr; 
+        grid-template-areas: 
+        "alumnos"
+        "sara" 
+        "joha" 
+        "day"
+    }
+}
+@media screen and (max-width: 768px){
+    .videos{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: 
+        "espanol"
+        "portugues"
+        "ingles";
+    }
+}
+@media screen and (max-width: 768px){
+    .maestras{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 0fr 0fr 0fr 0fr 0fr 0fr;
+        grid-template-areas:
+        "vane1"
+        "vane2"
+        "vane3"
+        "adri1"
+        "adri2"
+        "adri3"
+        "vale1"
+        "vale2"
+        "vale3";
+    }
+}
