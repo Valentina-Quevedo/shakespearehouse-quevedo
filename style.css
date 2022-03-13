@@ -8,8 +8,8 @@ body{
 }
 nav{
     padding: 1rem;
-    background-color: white;
-    opacity: 0.5;
+    background-color: white ; 
+    opacity: 1;
     position: fixed;
     display: flex;
     justify-content: flex-end;
@@ -18,8 +18,7 @@ nav{
 nav ul{
     list-style: none;
     display: flex;
-    justify-content: flex-end;
-    margin-left: 1200px;
+    justify-content: center;
 }
 nav ul a{
     color: black;
@@ -36,6 +35,35 @@ nav ul a:hover{
     background-image: url(./1.JPG);
     background-size: cover;
     height: 600px;
+}
+.inscripciones{
+    background-color: blanchedalmond;
+    text-align: left;
+    font-size: 40px;
+    font-family: 'Libre Baskerville', serif;
+    transition: all 2s ease;
+    width: 800px;
+}
+.opciones{
+    background-color: blanchedalmond;
+    text-align: left;
+    font-size: 40px;
+    font-family: 'Libre Baskerville', serif;
+    transition: all 2s ease;
+    width: 700px;
+}
+.inscripciones:hover{
+    background-color: yellow;
+    width: 1263px;
+    text-align: center;
+    font-size: 50px;
+}
+.opciones:hover{
+    background-color: yellow;
+    width: 1263px;
+    text-align: center;
+    font-size: 50px;
+
 }
 .contenedor{
     background-color: black;
@@ -136,14 +164,17 @@ nav ul a:hover{
 .vane1{
     margin: auto;
     grid-area: vane1;
+    border-radius: 10px;
 }
 .adri1{
     margin: auto;
     grid-area: adri1;
+    border-radius: 10px;
 }
 .vale1{
     margin: auto;
     grid-area: vale1;
+    border-radius: 10px;
 }
 .vane2{
     text-align: center;
@@ -187,6 +218,7 @@ nav ul a:hover{
 .presentacion{
     margin: auto;
     grid-area: presentacion;
+    border-radius: 10px;
 }
 .contact{
     width: 100%;
@@ -257,8 +289,6 @@ nav ul a:hover{
         "joha" 
         "day"
     }
-}
-@media screen and (max-width: 768px){
     .videos{
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr 1fr;
@@ -267,8 +297,6 @@ nav ul a:hover{
         "portugues"
         "ingles";
     }
-}
-@media screen and (max-width: 768px){
     .maestras{
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 0fr 0fr 0fr 0fr 0fr 0fr 0fr 0fr 0fr;
@@ -293,14 +321,18 @@ nav ul a:hover{
     .vale3{
         margin: 5px 50px 50px 50px;
     }
-}
-@media screen and (max-width: 768px){
     .contact{
         grid-template-columns: 1fr;
-        grid-template-rows: 0fr 0fr 0fr;
+        grid-template-rows: 0fr 0fr 0fr 0fr 0fr 0fr 0fr 0fr;
         grid-template-areas: 
-        "contacto"
-        "email"
-        "form";
+        "title title"
+        "contacto" 
+        "gmail"
+        "email" 
+        "form"
+        "mesa"
+        "completa"
+        "texto";
     }
+    
 }
