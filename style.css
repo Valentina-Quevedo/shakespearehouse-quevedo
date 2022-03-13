@@ -69,7 +69,7 @@ nav ul a:hover{
 
 }
 .sara{
-    margin: auto
+    margin: auto;
 }
 .joha{
     margin: auto;
@@ -130,55 +130,113 @@ nav ul a:hover{
 }
 .vane1{
     margin: auto;
+    grid-area: vane1;
 }
 .adri1{
     margin: auto;
+    grid-area: adri1;
 }
 .vale1{
     margin: auto;
+    grid-area: vale1;
 }
 .vane2{
     text-align: center;
     font-family: 'Libre Baskerville', serif;
     font-size: 20px;
+    grid-area: vane2;
 }
 .adri2{
     text-align: center;
     font-family: 'Libre Baskerville', serif;
     font-size: 20px;
+    grid-area: adri2;
 }
 .vale2{
     text-align: center;
     font-family: 'Libre Baskerville', serif;
     font-size: 20px;
+    grid-area: vale2;
 }
 .vane3{
     text-align: center;
     font-family: 'Libre Baskerville', serif;
     font-size: 15px;
+    line-height: 1,5px;
+    grid-area: vane3;
 }
 .adri3{
     text-align: center;
     font-family: 'Libre Baskerville', serif;
     font-size: 15px;
+    line-height: 1,5px;
+    grid-area: adri3;
 }
 .vale3{
     text-align: center;
     font-family: 'Libre Baskerville', serif;
     font-size: 15px;
+    line-height: 1,5px;
+    grid-area: vale3;
 }
-.contacto{
+.contact{
+    width: 100%;
+    margin:20px auto;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0fr 0fr 0fr 0fr 0fr 0fr;
+    gap:20px;
+    grid-template-areas:
+    "title title"
+    "contacto email" 
+    "gmail form"
+    "mesa mesa"
+    "completa completa"
+    "texto texto"
+}
+.title{
     font-size: 50px;
     text-align: center;
     font-family: 'Germania One', cursive;
+    grid-area: title;
+}
+.contacto{
+    text-align: center;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 20px;
+    grid-area: contacto;
+}
+.gmail{
+    text-align: center;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 17px;
+    line-height: 3rem;
+    grid-area: gmail;
 }
 .email{
     text-align: center;
     font-family: 'Libre Baskerville', serif;
     font-size: 20px;
+    grid-area: email;
 }
 .form{
     text-align: center;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 17px;
+    grid-area: form;
+}
+.mesa{
+    text-align: center;
+    grid-area: mesa;
+}
+.completa{
+    text-align: center;
+    grid-area: completa;
+}
+.texto{
+    text-align: center;
+    grid-area: texto;
 }
 @media screen and (max-width: 768px){
     .contenedor{
@@ -204,16 +262,35 @@ nav ul a:hover{
 @media screen and (max-width: 768px){
     .maestras{
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 1fr 0fr 0fr 0fr 0fr 0fr 0fr;
-        grid-template-areas:
+        grid-template-rows: 1fr 0fr 0fr 0fr 0fr 0fr 0fr 0fr 0fr;
+        grid-template-areas: 
         "vane1"
-        "vane2"
-        "vane3"
-        "adri1"
-        "adri2"
+        "vane2" 
+        "vane3" 
+        "adri1" 
+        "adri2" 
         "adri3"
-        "vale1"
-        "vale2"
+        "vale1" 
+        "vale2" 
         "vale3";
+    }
+    .vane3{
+        margin: 5px 50px 50px 50px;
+    }
+    .adri3{
+        margin: 5px 50px 50px 50px;
+    }
+    .vale3{
+        margin: 5px 50px 50px 50px;
+    }
+}
+@media screen and (max-width: 768px){
+    .contact{
+        grid-template-columns: 1fr;
+        grid-template-rows: 0fr 0fr 0fr;
+        grid-template-areas: 
+        "contacto"
+        "email"
+        "form";
     }
 }
