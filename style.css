@@ -325,7 +325,7 @@ nav ul a:hover{
         grid-template-columns: 1fr;
         grid-template-rows: 0fr 0fr 0fr 0fr 0fr 0fr 0fr 0fr;
         grid-template-areas: 
-        "title title"
+        "title"
         "contacto" 
         "gmail"
         "email" 
@@ -334,5 +334,4 @@ nav ul a:hover{
         "completa"
         "texto";
     }
-    
 }
