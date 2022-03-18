@@ -6,14 +6,18 @@
 body{
     font-family: 'Libre Baskerville', serif;
 }
+.encabezado{
+    height: 300px;
+}
 nav{
     padding: 1rem;
     background-color: white ; 
-    opacity: 1;
+    opacity: 0.5;
     position: fixed;
     display: flex;
     justify-content: flex-end;
     width: 100%;
+    z-index: 1;
 }
 nav ul{
     list-style: none;
@@ -31,11 +35,7 @@ nav ul a:hover{
     background-color: wheat;
     font-weight: bold;
 }
-.encabezado{
-    background-image: url(./1.jpg);
-    background-size: cover;
-    height: 600px;
-}
+
 .inscripciones{
     background-color: blanchedalmond;
     text-align: left;
