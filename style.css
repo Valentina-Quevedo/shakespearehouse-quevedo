@@ -5,14 +5,8 @@
 }
 body{
     font-family: 'Libre Baskerville', serif;
-<<<<<<< HEAD
-}
-.encabezado{
-    height: 350px;
-=======
     background: rgb(255,255,255);
     background: linear-gradient(180deg, rgba(255,255,255,1) 12%, rgba(212,245,255,1) 49%, rgba(100,191,218,1) 100%);
->>>>>>> rama2
 }
 nav{
     padding: 1rem;
