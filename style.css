@@ -292,15 +292,6 @@ nav ul a:hover{
         "vale3"
         "presentacion";
     }
-    .vane3{
-        margin: 5px 50px 50px 50px;
-    }
-    .adri3{
-        margin: 5px 50px 50px 50px;
-    }
-    .vale3{
-        margin: 5px 50px 50px 50px;
-    }
     .contact{
         grid-template-columns: 1fr;
         grid-template-rows: 0fr 0fr 0fr 0fr 0fr 0fr 0fr 0fr;
