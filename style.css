@@ -5,15 +5,14 @@
 }
 body{
     font-family: 'Libre Baskerville', serif;
-}
-.encabezado{
-    height: 300px;
+    background: rgb(255,255,255);
+    background: linear-gradient(180deg, rgba(255,255,255,1) 12%, rgba(212,245,255,1) 49%, rgba(100,191,218,1) 100%);
 }
 nav{
     padding: 1rem;
     background-color: white ; 
-    opacity: 0.5;
-    position: fixed;
+    opacity: 1;
+    position: sticky;
     display: flex;
     justify-content: flex-end;
     width: 100%;
@@ -35,50 +34,8 @@ nav ul a:hover{
     background-color: wheat;
     font-weight: bold;
 }
-
-.inscripciones{
-    background-color: blanchedalmond;
-    text-align: left;
-    font-size: 40px;
-    font-family: 'Libre Baskerville', serif;
-    transition: all 2s ease;
-    width: 800px;
-}
-.opciones{
-    background-color: blanchedalmond;
-    text-align: left;
-    font-size: 40px;
-    font-family: 'Libre Baskerville', serif;
-    transition: all 2s ease;
-    width: 700px;
-}
-.inscripciones:hover{
-    background-color: yellow;
-    width: 1263px;
-    text-align: center;
-    font-size: 50px;
-}
-.opciones:hover{
-    background-color: yellow;
-    width: 1263px;
-    text-align: center;
-    font-size: 50px;
-
-}
-.contenedor{
-    background-color: black;
-    width: 100%;
-    margin:20px auto;
-
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: repeat(2 40px, 1fr 100px);
-    gap:20px;
-    grid-template-areas: 
-      "alumnos alumnos alumnos"
-      "sara joha day"
-}
 .bienvenidos{
+    padding: 1rem;
     font-size: 50px;
     text-align: center;
     font-family: 'Germania One', cursive;
@@ -88,26 +45,11 @@ nav ul a:hover{
     font-family: 'Libre Baskerville', serif;
     line-height: 2.5;
 }
-.alumnos{
+.comentarios{
+    padding: 1rem;
     font-size: 40px;
     text-align: center;
     font-family: 'Germania One', cursive;
-    color: white;
-    grid-area: alumnos;
-
-}
-.sara{
-    margin: auto;
-}
-.joha{
-    margin: auto;
-}
-.day{
-    margin: auto;
-}
-.scale:hover{
-    transform: scale(1.1, 1.1);
-    border-radius: 20px;
 }
 .footer{
     font-size: 15px;
@@ -280,15 +222,53 @@ nav ul a:hover{
     grid-area: texto;
 }
 @media screen and (max-width: 768px){
-    .contenedor{
+    .videos{
         grid-template-columns: 1fr;
-        grid-template-rows: 0fr 1fr 1fr 1fr; 
+        grid-template-rows: 1fr 1fr 1fr;
         grid-template-areas: 
-        "alumnos"
-        "sara" 
-        "joha" 
-        "day"
+        "espanol"
+        "portugues"
+        "ingles";
     }
+    .maestras{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 0fr 0fr 0fr 0fr 0fr 0fr 0fr 0fr 0fr;
+        grid-template-areas: 
+        "vane1"
+        "vane2" 
+        "vane3" 
+        "adri1" 
+        "adri2" 
+        "adri3"
+        "vale1" 
+        "vale2" 
+        "vale3"
+        "presentacion";
+    }
+    .vane3{
+        margin: 5px 50px 50px 50px;
+    }
+    .adri3{
+        margin: 5px 50px 50px 50px;
+    }
+    .vale3{
+        margin: 5px 50px 50px 50px;
+    }
+    .contact{
+        grid-template-columns: 1fr;
+        grid-template-rows: 0fr 0fr 0fr 0fr 0fr 0fr 0fr 0fr;
+        grid-template-areas: 
+        "title"
+        "contacto" 
+        "gmail"
+        "email" 
+        "form"
+        "mesa"
+        "completa"
+        "texto";
+    }
+}
+@media screen and (max-width: 320px){
     .videos{
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr 1fr;
