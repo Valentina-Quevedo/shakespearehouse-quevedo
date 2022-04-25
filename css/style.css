@@ -250,12 +250,43 @@ nav ul a:hover {
     grid-template-rows: 0fr 0fr 0fr 0fr 0fr 0fr 0fr 0fr;
     grid-template-areas: "title" "contacto"  "gmail" "email"  "form" "mesa" "completa" "texto"; } }
 
+@media screen and (max-width: 480px) {
+  .videos {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "espanol" "portugues" "ingles"; }
+  .maestras {
+    text-align: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 0fr 0fr 0fr 0fr 0fr 0fr 0fr 0fr 0fr;
+    grid-template-areas: "vane1" "vane2"  "vane3"  "adri1"  "adri2"  "adri3" "vale1"  "vale2"  "vale3" "presentacion"; }
+  .vane3 {
+    margin: 5px 50px 50px 50px; }
+  .adri3 {
+    margin: 5px 50px 50px 50px; }
+  .vale3 {
+    margin: 5px 50px 50px 50px; }
+  .vane1 {
+    margin: 5px 0px 5px 0px; }
+  .adri1 {
+    margin: 5px 0px 5px 0px; }
+  .vale1 {
+    margin: 5px 0px 5px 0px; }
+  .contact {
+    grid-template-columns: 1fr;
+    grid-template-rows: 0fr 0fr 0fr 0fr 0fr 0fr 0fr 0fr;
+    grid-template-areas: "title" "contacto"  "gmail" "email"  "form" "mesa" "completa" "texto"; }
+  .docencia {
+    text-align: center;
+    margin: 15px 15px 15px 15px; } }
+
 @media screen and (max-width: 320px) {
   .videos {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-areas: "espanol" "portugues" "ingles"; }
   .maestras {
+    margin: auto;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 0fr 0fr 0fr 0fr 0fr 0fr 0fr 0fr 0fr;
     grid-template-areas: "vane1" "vane2"  "vane3"  "adri1"  "adri2"  "adri3" "vale1"  "vale2"  "vale3" "presentacion"; }
