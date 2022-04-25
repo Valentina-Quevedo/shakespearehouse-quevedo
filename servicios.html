@@ -7,35 +7,67 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Germania+One&family=Libre+Baskerville&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" href="captura.jpg">
+    <link rel="shortcut icon" href="./imagenes/captura.jpg">
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
     <title>Shakespeare House</title>
 </head>
 <body>
     <header class="encabezado">
-      <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="servicios.html">Servicios</a>
-            </li>
-            <li><a href="nosotros.html">Nosotros</a></li>
-            <li><a href="contacto.html">Contacto</a></li>
-        </ul>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="./index.html">Shakespeare House</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon" ></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./servicios.html">Servicios</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./nosotros.html">Nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./contacto.html">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </nav>
     </header>
     <main>
-        <section class="videos">
-            <img src="clases(2).gif" alt="clase" width="300px" class="espanol scale">
-            <img src="clases.gif" alt="clase" width="300px" class="portugues scale">
-            <img src="clases(1).gif" alt="clase" width="300px" class="ingles scale">
-        </section>
+      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./imagenes/ingles.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./imagenes/portugues.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./imagenes/espanol.jpg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
         <section class="sec1">
           Somos un instituto de idiomas en Buenos Aires y estamos creciendo en cada paso para garantizarles una excelente educación del idioma inglés y español. Sabemos que estudiar un nuevo idioma es difícil, pero con nosotros no tiene por que ser algo tedioso y aburrido ya que creemos firmemente que el aprendizaje puede ser divertido y estimulante. <br>
 
           Nuestras docentes tienen años de experiencia con distintos niveles y edades y les brindarán una amplia variedad de herramientas y recursos para que terminen amando el idioma elegido. <br>
 
-          Tenemos en cuenta las necesidades de cada alumno, es por eso que ofrecemos clases individuales personalizadas tanto de inglés para todos los niveles y edades, como también de portugués para extranjeros. Además contamos con cursos grupales en ambos idiomas.
+          Tenemos en cuenta las necesidades de cada alumno, es por eso que ofrecemos clases individuales personalizadas tanto de inglés para todos los niveles y edades, como también de español para extranjeros. Además contamos con cursos grupales en ambos idiomas.
       </section> <br>
         <section class="container">
             <div id="carouselExampleIndicators" class="carousel slide w-50 mx-auto" data-bs-ride="carousel">
@@ -48,19 +80,19 @@
                 </div>
                 <div class="carousel-inner">
                   <div class="carousel-item active">
-                    <img src="./alumnos1.jpeg" class="d-block w-100" alt="1">
+                    <img src="./imagenes/alumnos1.jpeg" class="d-block w-100" alt="1">
                   </div>
                   <div class="carousel-item">
-                    <img src="./alumnos2.jpeg" class="d-block w-100" alt="2">
+                    <img src="./imagenes/alumnos2.jpeg" class="d-block w-100" alt="2">
                   </div>
                   <div class="carousel-item">
-                    <img src="./alumnos3.jpeg" class="d-block w-100" alt="3">
+                    <img src="./imagenes/alumnos3.jpeg" class="d-block w-100" alt="3">
                   </div>
                   <div class="carousel-item">
-                    <img src="./alumnos4.jpeg" class="d-block w-100" alt="4">
+                    <img src="./imagenes/alumnos4.jpeg" class="d-block w-100" alt="4">
                   </div>
                   <div class="carousel-item">
-                    <img src="./alumnos5.jpeg" class="d-block w-100" alt="5">
+                    <img src="./imagenes/alumnos5.jpeg" class="d-block w-100" alt="5">
                   </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -74,7 +106,7 @@
               </div>
         </section>
     </main>
-    <footer class="footer">
+    <footer class="footer"> <br>
         &copy; 2022 Todos los derechos reservados
     </footer>
     </script>

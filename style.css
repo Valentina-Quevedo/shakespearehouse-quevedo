@@ -6,7 +6,9 @@
 body{
     font-family: 'Libre Baskerville', serif;
     background: rgb(255,255,255);
-    background: linear-gradient(180deg, rgba(255,255,255,1) 12%, rgba(212,245,255,1) 49%, rgba(100,191,218,1) 100%);
+    background: background: rgb(212,245,255);
+    background: background: rgb(212,245,255);
+    background: linear-gradient(180deg, rgba(212,245,255,1) 2%, rgba(100,191,218,1) 76%, rgba(2,112,144,1) 100%);
 }
 nav{
     padding: 1rem;
@@ -43,7 +45,9 @@ nav ul a:hover{
 .lema{
     text-align: center;
     font-family: 'Libre Baskerville', serif;
-    line-height: 2.5;
+    line-height: 2;
+    font-size: 34px;
+    
 }
 .comentarios{
     padding: 1rem;
